@@ -1,0 +1,88 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página com fundo escuro e fonte legível */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fc3c3c;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #fc3c3c;
+  user-select: none;
+  margin-bottom: 40px;
+}
+
+/* Artigos de notícia */
+.news, .skin {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(252, 60, 60, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.news:hover, .skin:hover {
+  box-shadow: 0 6px 20px rgba(252, 60, 60, 0.7);
+}
+
+/* Títulos das notícias e skins */
+.news h2, section h2 {
+  color: #fc3c3c;
+  margin-bottom: 15px;
+}
+
+/* Links estilizados */
+a {
+  color: #fcdc3c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Parágrafos */
+.news p, .skin p {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  color: #dcdcdc;
+}
+
+/* Seção de skins */
+section h2 {
+  border-bottom: 2px solid #fcdc3c;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
+
+/* Container das skins */
+.skin p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 15px;
+  }
+}
